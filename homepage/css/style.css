@@ -1,0 +1,237 @@
+  body{
+    margin: 0; /* 去掉外边距 */
+  padding: 0;
+  }
+header{
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  background: transparent;
+  
+  width: 100%;
+  background-color: white;
+  /* 居中导航链接 */
+
+  
+}
+header ul {
+    list-style-type: none; /* 去除列表样式 */
+    margin: 0;
+    padding: 0;
+  }
+  header li {
+    display: inline; /* 设置列表项为行内元素，使其水平排列 */
+    margin-right: 20px; /* 右边距，用于分隔链接 */
+    text-align: center; 
+    line-height: 0; 
+  }
+
+header a{
+    padding: 0 5px;
+      line-height: 35px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #373737;
+      letter-spacing: 3px;
+      position: relative;
+      
+
+}
+header h1 {
+    display: inline-block; /* 使标题显示为行内块级元素 */
+    margin-right: 20px; /* 右边距，用于分隔标题和导航链接 */
+  }
+
+  main{
+    header{
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  background: transparent;
+  
+  width: 100%;
+  background-color: white;
+  /* 居中导航链接 */
+
+  
+}
+header ul {
+    list-style-type: none; /* 去除列表样式 */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header li {
+    display: inline; /* 设置列表项为行内元素，使其水平排列 */
+    margin-right: 20px; /* 右边距，用于分隔链接 */
+    text-align: center; 
+    line-height: 0; 
+  }
+  
+
+header a{
+    padding: 0 5px;
+      line-height: 35px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #373737;
+      letter-spacing: 3px;
+      position: relative;
+      
+
+}
+header h1 {
+    display: inline-block; /* 使标题显示为行内块级元素 */
+    margin-right: 20px; /* 右边距，用于分隔标题和导航链接 */
+  }
+
+.anchor-offset {
+  position: relative;
+  top: -42.112px; /* 根据导航栏高度调整 */
+  visibility: hidden; /* 隐藏占位符 */
+  height: 0; /* 设置高度为0，确保不占据空间 */
+}
+
+  
+  .aboutMe,
+    .selfIntroduction,
+    .projectIntroduction,
+    .share,
+    .contact {
+      flex: 1; /* 均分空间 */
+      margin: 0; /* 去掉外边距 */
+  padding: 0;
+  width:100%;
+      
+      
+    }
+
+    .share {
+      flex-basis: auto; /* 让第4个section的大小基于内容 */
+    }
+    .aboutMe{
+        background-image: url('../img/E-700256-156F9D71C.jpeg');
+        background-size: 100% 100%;
+        background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 42.112px;
+    }
+    .selfIntroduction{
+        background-image: url('../img/E-700256-156F9D71C.jpeg');
+        background-size: 100% 100%;
+        background-position: center;
+  background-repeat: no-repeat;
+    }
+    
+  }
+  .aboutMe,
+    .selfIntroduction,
+    .projectIntroduction,
+    .share,
+    .contact {
+      flex: 1; /* 均分空间 */
+      margin: 0; /* 去掉外边距 */
+      padding: 0;
+
+  padding-top: 160px;
+  padding-bottom: 120px;
+      display: flex; /* 将 .aboutMe 设置为 Flex 容器 */
+      justify-content: center; /* 水平居中对齐内容 */
+      align-items: center; /* 垂直居中对齐内容 */
+      
+      
+    }
+    .title{
+      margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    box-sizing: border-box;
+    background-color: rgb(200, 160, 255);
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.414em;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+    }
+
+    .share {
+      flex-basis: auto; /* 让第4个section的大小基于内容 */
+    }
+    .aboutMe{
+        background-image: url('../img/E-700256-156F9D71C.jpeg');
+        background-size: 100% 100%;
+        background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 42.112px;
+  padding-top: 160px;
+  padding-bottom: 120px;
+
+    }
+    .aboutMe div{
+      display: block; /* 设置元素为块级元素 */
+  width: 100%; /* 宽度占据父元素的100% */
+  height: auto; /* 高度自动根据内容调整 */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left; /* 文本内容左对齐 */
+  max-width: 600px; /* 文本内容水平居中对齐 */
+
+    }
+    .aboutMe h1{
+      font-size: 48px;
+      font-family: "DM Sans",sans-serif;
+      margin-top: 0;
+    }
+    .aboutMe h2{
+      font-size: 20px;
+      font-family: inter ,sans-serif;
+    }
+    .aboutMe h3{
+      font-size: 16px;
+      font-family: inter,sans-serif;
+    }
+    .aboutMe img{
+      height:40px;
+      width: 40px;
+      vertical-align: middle;
+
+    }
+    #picatext{
+      margin-bottom: 0;
+    }
+    .selfIntroduction{
+        background-image: url('../img/450.jpeg');
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .projectIntroduction{
+      background-image: url('../img/下载.jpeg');
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .share{
+      background-image: url('../img/staff_1024.jpg');
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .contact{
+      background-image: url('../img/NkTwhy6Bfx_small.jpg');
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    
