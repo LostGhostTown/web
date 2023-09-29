@@ -1,4 +1,4 @@
-  body{
+  body,html{
     margin: 0; /* 去掉外边距 */
   padding: 0;
   }
@@ -209,6 +209,13 @@ header h1 {
     #picatext{
       margin-bottom: 0;
     }
+    #sdiv{
+      width: 40%;
+    }
+    #me{
+      height: 490px;
+      width: auto;
+    }
     .selfIntroduction{
         background-image: url('../img/450.jpeg');
         background-size: 100% 100%;
@@ -226,12 +233,83 @@ header h1 {
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
+        
+          display: flex;
+          flex-direction: column; /* 垂直布局：将子元素垂直排列 */
+          align-items: flex-start;
+                    justify-content: center; /* 在垂直方向上居中对齐子元素 */
+        
     }
     .contact{
       background-image: url('../img/NkTwhy6Bfx_small.jpg');
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
+        color: #fff;
+        padding-top: 100px;
+  padding-bottom: 60px;
     }
+    .contact ul{
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .contact li{
+      padding-bottom: 20px;
+    }
+    .center{
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .indent{
+      text-indent: 36px;
+    }
+    .contact a{
+      color: inherit;
+  text-decoration: none;
+    }
+    #secul{
+      padding-left: 100px;
+    }
+    #secul li{
+      padding-bottom: 35px;
+    }
+    .sharewindow{
+      width: 50%;
+  min-height: 300px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 10px solid black; /* 添加黑色边框，可以根据需要调整粗细 */
+  border-radius: 10px; /* 添加圆角，可以根据需要调整半径 */
+  margin: 0 auto; /* 水平居中 */
+  padding: 50px; /* 添加 50px 的内边距 */
+  margin-top: 25px;
+  margin-bottom: 25px;
+    }
+    .share .title{
+      margin-left: 40%; /* 向右移动 20% */
+      margin-bottom: 50px;
+    }
+    .sharectent{
+      flex-direction: column;
+      display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;
+  margin:0;
+    }
+    .sharewindow video {
+      min-height: 300px; /* 使视频宽度充满容器 */
+      width: auto; /* 根据宽度自动计算高度，以保持视频比例不扭曲 */
+      /* 其他样式，根据需要添加 */
+    }
+    .sharectent h3 {
+      text-align: center; /* 文本水平居中 */
+      margin-top: 10px; /* 设置标题与视频之间的上边距，根据需要调整 */
+      /* 其他样式，根据需要添加 */
+    }    
+    .sharectent img{
+      max-width: 100%;
+      height: auto;
+    }
+    
+    
     
     
