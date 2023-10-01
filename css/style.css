@@ -215,18 +215,75 @@ header h1 {
     #me{
       height: 490px;
       width: auto;
+      
+
+    }
+    #picme{
+      text-align: right;
     }
     .selfIntroduction{
         background-image: url('../img/450.jpeg');
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
+        display: flex;
+    flex-direction: column;
+    color: #fff;
     }
+    #contentme{
+      display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+    .left, .right {
+      flex: 1;
+      padding: 20px; /* 可以根据需要添加内边距 */
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+}
+#logo{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 每行两列 */
+    grid-template-rows: repeat(3, auto); /* 三行，高度根据内容自动调整 */
+    gap: 50px; /* 间距 */
+}
+#c, #java, #python, #mysql, #html {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+#c{
+  background-color: blue;
+}
+#java{
+  background-color: green;
+}
+#python{
+  background-color: orange;
+}
+#mysql{
+  background-color: purple;
+}
+#html{
+  background-color: rgb(139,0,0);
+}
+  .selfIntroduction  .title{
+    margin-right: 50%; /* 向右移动 20% */
+    margin-bottom: 50px;
+  }
+
     .projectIntroduction{
       background-image: url('../img/下载.jpeg');
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    .projectIntroduction .title{
+      
     }
     .share{
       background-image: url('../img/staff_1024.jpg');
@@ -241,7 +298,8 @@ header h1 {
         
     }
     .contact{
-      background-image: url('../img/NkTwhy6Bfx_small.jpg');
+      background-color: #373737;
+      background-image: url('../img/5c756f92152cb2.png');
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
