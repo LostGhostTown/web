@@ -280,10 +280,32 @@ header h1 {
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* 垂直方向排列 */
+        
     }
     .projectIntroduction .title{
-      
+      margin-right: 50%; 
+      margin-bottom: 50px;
+    }
+
+    #projectList img{
+      height:150px;
+      width: auto;
+    }
+    #projectList{
+      margin-left: 5%;
+        margin-right: 5%;
+      display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 每行两列 */
+    grid-template-rows: repeat(2, auto); /* 三行，高度根据内容自动调整 */
+    gap: 50px; /* 间距 */   
+    }
+    #cp, #androidp, #databasep, #pythonp{
+      display: flex;
+      flex-direction: row;
+      align-items: center; /* 垂直居中对齐内容 */
+      justify-content: center; /* 水平居中对齐内容 */
+      text-align: center;
     }
     .share{
       background-image: url('../img/staff_1024.jpg');
