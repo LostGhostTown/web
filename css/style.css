@@ -1,5 +1,5 @@
   body,html{
-    margin: 0; /* 去掉外边距 */
+    margin: 0; 
   padding: 0;
   }
 header{
@@ -11,18 +11,18 @@ header{
   
   width: 100%;
   background-color: white;
-  /* 居中导航链接 */
+
 
   
 }
 header ul {
-    list-style-type: none; /* 去除列表样式 */
+    list-style-type: none; 
     margin: 0;
     padding: 0;
   }
   header li {
-    display: inline; /* 设置列表项为行内元素，使其水平排列 */
-    margin-right: 20px; /* 右边距，用于分隔链接 */
+    display: inline; 
+    margin-right: 20px; 
     text-align: center; 
     line-height: 0; 
   }
@@ -40,8 +40,8 @@ header a{
 
 }
 header h1 {
-    display: inline-block; /* 使标题显示为行内块级元素 */
-    margin-right: 20px; /* 右边距，用于分隔标题和导航链接 */
+    display: inline-block; 
+    margin-right: 20px; 
   }
 
   main{
@@ -54,19 +54,19 @@ header h1 {
   
   width: 100%;
   background-color: white;
-  /* 居中导航链接 */
+
 
   
 }
 header ul {
-    list-style-type: none; /* 去除列表样式 */
+    list-style-type: none; 
     margin: 0;
     padding: 0;
   }
   
   header li {
-    display: inline; /* 设置列表项为行内元素，使其水平排列 */
-    margin-right: 20px; /* 右边距，用于分隔链接 */
+    display: inline; 
+    margin-right: 20px; 
     text-align: center; 
     line-height: 0; 
   }
@@ -85,15 +85,15 @@ header a{
 
 }
 header h1 {
-    display: inline-block; /* 使标题显示为行内块级元素 */
-    margin-right: 20px; /* 右边距，用于分隔标题和导航链接 */
+    display: inline-block; 
+    margin-right: 20px;
   }
 
 .anchor-offset {
   position: relative;
-  top: -42.112px; /* 根据导航栏高度调整 */
-  visibility: hidden; /* 隐藏占位符 */
-  height: 0; /* 设置高度为0，确保不占据空间 */
+  top: -42.112px; 
+  visibility: hidden; 
+  height: 0;
 }
 
   
@@ -102,8 +102,8 @@ header h1 {
     .projectIntroduction,
     .share,
     .contact {
-      flex: 1; /* 均分空间 */
-      margin: 0; /* 去掉外边距 */
+      flex: 1; 
+      margin: 0; 
   padding: 0;
   width:100%;
       
@@ -111,7 +111,7 @@ header h1 {
     }
 
     .share {
-      flex-basis: auto; /* 让第4个section的大小基于内容 */
+      flex-basis: auto; 
     }
     .aboutMe{
         background-image: url('../img/E-700256-156F9D71C.jpeg');
@@ -133,15 +133,15 @@ header h1 {
     .projectIntroduction,
     .share,
     .contact {
-      flex: 1; /* 均分空间 */
-      margin: 0; /* 去掉外边距 */
+      flex: 1; 
+      margin: 0; 
       padding: 0;
 
   padding-top: 160px;
   padding-bottom: 120px;
-      display: flex; /* 将 .aboutMe 设置为 Flex 容器 */
-      justify-content: center; /* 水平居中对齐内容 */
-      align-items: center; /* 垂直居中对齐内容 */
+      display: flex; 
+      justify-content: center;
+      align-items: center; 
       
       
     }
@@ -165,7 +165,7 @@ header h1 {
     }
 
     .share {
-      flex-basis: auto; /* 让第4个section的大小基于内容 */
+      flex-basis: auto; 
     }
     .aboutMe{
         background-image: url('../img/E-700256-156F9D71C.jpeg');
@@ -178,13 +178,13 @@ header h1 {
 
     }
     .aboutMe div{
-      display: block; /* 设置元素为块级元素 */
-  width: 100%; /* 宽度占据父元素的100% */
-  height: auto; /* 高度自动根据内容调整 */
+      display: block; 
+  width: 100%; 
+  height: auto; 
     margin-top: 0px;
     margin-bottom: 0px;
-    text-align: left; /* 文本内容左对齐 */
-  max-width: 600px; /* 文本内容水平居中对齐 */
+    text-align: left; 
+  max-width: 600px;
 
     }
     .aboutMe h1{
@@ -237,7 +237,7 @@ header h1 {
     }
     .left, .right {
       flex: 1;
-      padding: 20px; /* 可以根据需要添加内边距 */
+      padding: 20px; 
   }
   .left {
     display: flex;
@@ -245,9 +245,9 @@ header h1 {
 }
 #logo{
   display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 每行两列 */
-    grid-template-rows: repeat(3, auto); /* 三行，高度根据内容自动调整 */
-    gap: 50px; /* 间距 */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    gap: 50px;
 }
 #c, #java, #python, #mysql, #html {
   border: 1px solid #ccc;
@@ -270,17 +270,17 @@ header h1 {
   background-color: rgb(139,0,0);
 }
   .selfIntroduction  .title{
-    margin-right: 50%; /* 向右移动 20% */
+    margin-right: 50%; 
     margin-bottom: 50px;
   }
 
     .projectIntroduction{
-      background-image: url('../img/下载.jpeg');
+      background-image: url('../img/bgg.jpeg');
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
-        flex-direction: column; /* 垂直方向排列 */
+        flex-direction: column;
         
     }
     .projectIntroduction .title{
@@ -296,15 +296,15 @@ header h1 {
       margin-left: 5%;
         margin-right: 5%;
       display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 每行两列 */
-    grid-template-rows: repeat(2, auto); /* 三行，高度根据内容自动调整 */
-    gap: 50px; /* 间距 */   
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 50px;  
     }
     #cp, #androidp, #databasep, #pythonp{
       display: flex;
       flex-direction: row;
-      align-items: center; /* 垂直居中对齐内容 */
-      justify-content: center; /* 水平居中对齐内容 */
+      align-items: center;
+      justify-content: center; 
       text-align: center;
     }
     .share{
@@ -314,9 +314,9 @@ header h1 {
         background-repeat: no-repeat;
         
           display: flex;
-          flex-direction: column; /* 垂直布局：将子元素垂直排列 */
+          flex-direction: column; 
           align-items: flex-start;
-                    justify-content: center; /* 在垂直方向上居中对齐子元素 */
+                    justify-content: center; 
         
     }
     .contact{
@@ -357,33 +357,31 @@ header h1 {
       width: 50%;
   min-height: 300px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 10px solid black; /* 添加黑色边框，可以根据需要调整粗细 */
-  border-radius: 10px; /* 添加圆角，可以根据需要调整半径 */
-  margin: 0 auto; /* 水平居中 */
-  padding: 50px; /* 添加 50px 的内边距 */
+  border: 10px solid black;
+  border-radius: 10px;
+  margin: 0 auto; 
+  padding: 50px; 
   margin-top: 25px;
   margin-bottom: 25px;
     }
     .share .title{
-      margin-left: 40%; /* 向右移动 20% */
+      margin-left: 40%; 
       margin-bottom: 50px;
     }
     .sharectent{
       flex-direction: column;
       display: flex;
-  justify-content: center; /* 水平居中 */
+  justify-content: center; 
   align-items: center;
   margin:0;
     }
     .sharewindow video {
-      min-height: 300px; /* 使视频宽度充满容器 */
-      width: auto; /* 根据宽度自动计算高度，以保持视频比例不扭曲 */
-      /* 其他样式，根据需要添加 */
+      min-height: 300px; 
+      width: auto; 
     }
     .sharectent h3 {
-      text-align: center; /* 文本水平居中 */
-      margin-top: 10px; /* 设置标题与视频之间的上边距，根据需要调整 */
-      /* 其他样式，根据需要添加 */
+      text-align: center; 
+      margin-top: 10px;
     }    
     .sharectent img{
       max-width: 100%;
