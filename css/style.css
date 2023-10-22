@@ -1,3 +1,24 @@
+a{
+  text-decoration: none;
+}
+li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; 
+  bottom: 0;
+  left: 0;
+  background: black;
+  transform: scaleX(0); 
+  transform-origin: bottom left;
+  transition: transform 0.3s ease; 
+}
+li a:hover::before {
+  transform: scaleX(1); 
+}
+
+
+
   body,html{
     margin: 0; 
   padding: 0;
@@ -36,8 +57,6 @@ header a{
       color: #373737;
       letter-spacing: 3px;
       position: relative;
-      
-
 }
 header h1 {
     display: inline-block; 
@@ -81,13 +100,21 @@ header a{
       color: #373737;
       letter-spacing: 3px;
       position: relative;
-      
+      text-decoration: none !important;
+
 
 }
 header h1 {
     display: inline-block; 
     margin-right: 20px;
   }
+
+  nav ul li a {
+    text-decoration: none !important;
+  }
+
+  
+  
 
 .anchor-offset {
   position: relative;
@@ -300,6 +327,7 @@ header h1 {
     grid-template-rows: repeat(2, auto); 
     gap: 50px;  
     }
+    
     #cp, #androidp, #databasep, #pythonp{
       display: flex;
       flex-direction: row;
@@ -387,7 +415,58 @@ header h1 {
       max-width: 100%;
       height: auto;
     }
-    
-    
-    
-    
+
+    .image-container{
+      position: relative;
+    }
+    .small-image{
+      display: block;
+    }
+    .large-image{
+      position: absolute;
+      overflow: hidden;
+      left:0;
+      z-index: 1;
+      transform: scale(2); 
+      transform-origin: top left;
+      display: none;
+      pointer-events: none;
+    }
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+      border: 1px solid #ccc;
+      border-radius: 10px; /* 圆角 */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      z-index: 1000;
+  }
+  
+  .modal h2 {
+      font-size: 24px;
+      margin: 0 0 10px;
+  }
+  
+  .modal p {
+      font-size: 16px;
+      margin: 0;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#weixin{
+  width:200px;
+  display: none;
+
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}

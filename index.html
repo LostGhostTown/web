@@ -4,15 +4,16 @@
         <title>Shihao Yu Homepage</title>
         <link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
         <link href="css/style.css" rel="stylesheet">
+        
     </head>
     <body>
         <header>
             
     
     <nav>
-      <ul>
+      <ul id="menu">
         <li><h1>Shihao Yu's Homepage</h1></li>
-        <li><a href="#1">ABOUT ME</a></li>
+        <li><a href="#1" id="a1">ABOUT ME</a></li>
         <li><a href="#2">SELF INTRODUCTION</a></li>
         <li><a href="#3">PROJECT INTRODUCTION</a></li>
         <li><a href="#4">SHARE</a></li>
@@ -70,26 +71,33 @@
             <div id="projectList">
                 
                 <div id="cp">
-                    <img src="img/2023-10-03 151922.png">
+                    <div class="image-container">
+                    <img src="img/2023-10-03 151922.png" class="small-image" onclick="openModal('C++ Project', 'This is a management system. Users can apply to request administrator approval. Users can review responses at any time. Administrators can review history.')">
+                    <img src="img/2023-10-03 151922.png" class="large-image">
+                    </div>
                     <div>
-                    <h1>Appointment Management System</h1>
-                    <p>This is a management system. Users can apply to request administrator approval. Users can review responses at any time. Administrators can review history.</p>
+                    <h1 onclick="openModal('C++ Project', 'This is a management system. Users can apply to request administrator approval. Users can review responses at any time. Administrators can review history.')">Appointment Management System</h1>
                 </div>
                 </div>
                 <div id="androidp">
-                    <img src="img/20231001160453.png">
+                    <div class="image-container">
+                    <img src="img/20231001160453.png" class="small-image" onclick="openModal('Android application', 'Patients can see the therapist\'s basic information through the therapist list and send an appointment request with a time to a certain therapist. Therapists can accept applications and obtain the patient\'s address. Patients can rate the therapist after the meeting. This review is visible to everyone. Patients and their corresponding therapists can communicate instantly via chat.')">
+                    <img src="img/20231001160453.png" class="large-image">
+                    </div>
                     <div>
-                    <h1>Therapist Appointment APP</h1>
-                    <p>Patients can see the therapist's basic information through the therapist list and send an appointment request with a time to a certain therapist. Therapists can accept applications and obtain the patient's address. Patients can rate the therapist after the meeting. This review is visible to everyone. Patients and their corresponding therapists can communicate instantly via chat.</p>
+                    <h1 onclick="openModal('Android application', 'Patients can see the therapist\'s basic information through the therapist list and send an appointment request with a time to a certain therapist. Therapists can accept applications and obtain the patient\'s address. Patients can rate the therapist after the meeting. This review is visible to everyone. Patients and their corresponding therapists can communicate instantly via chat.')">Therapist Appointment APP</h1>
                     </div>
                 </div>
             
             
                 <div id="databasep">
-                    <img src="img/20231001160911.png">
+                    <div class="image-container">
+                    <img src="img/20231001160911.png" class="small-image" onclick="openModal('database project','This is primarily a mysql project. Users can log in to their account and post products. Anyone can review products posted by others. Users can post up to 3 products and 3 comments per day. Products can be sorted and printed based on price or category.')">
+                    <img src="img/20231001160911.png" class="large-image">
+                    </div>
                     <div>
-                    <h1>Online Shopping Page and Data Management</h1>
-                    <p>This is primarily a mysql project. Users can log in to their account and post products. Anyone can review products posted by others. Users can post up to 3 products and 3 comments per day. Products can be sorted and printed based on price or category.</p>
+                    <h1 onclick="openModal('database project','This is primarily a mysql project. Users can log in to their account and post products. Anyone can review products posted by others. Users can post up to 3 products and 3 comments per day. Products can be sorted and printed based on price or category.')">Online Shopping Page and Data Management</h1>
+                    
                     </div> 
                 </div>
                 <div id="pythonp">
@@ -124,8 +132,8 @@
                 <div class="sharectent">
                     <h3>Great place for holiday travel
                     </h3>
-                    <img src="img/10050c00000061zyb12AB_R_1024_10000_Q90.jpg">
-                    <img src="img/cdb98f2207c840cd8e009c2da5a87951.jpg">
+                    <img src="img/10050c00000061zyb12AB_R_1024_10000_Q90.jpg" onclick="openImageModal('img/10050c00000061zyb12AB_R_1024_10000_Q90.jpg')">
+                    <img src="img/cdb98f2207c840cd8e009c2da5a87951.jpg" onclick="openImageModal('img/cdb98f2207c840cd8e009c2da5a87951.jpg')">
                 </div>
             </div>
             </section>
@@ -146,8 +154,8 @@
             </div>
             <div>
                 <ul id="secul">
-                    <li><img src="img/62a2119c443b787d58371239.png" width="30px" class="center">
-                    <span class="center">Alan_0125</span></li>
+                    <li><img src="img/62a2119c443b787d58371239.png" width="30px" class="center" id="wei1">
+                    <span class="center" id="wei2">Alan_0125</span><img src="img/Weixin Image.png" id="weixin"></li>
                     <li><img src="img/github-mark-white.png" width="30px" class="center">
                     <a class="center" href="https://github.com/LostGhostTown">LostGhostTown</a></li>
                     <li><img src="img/629231dbad752419f8ecfe6f.png" width="40px" class="center">
@@ -156,5 +164,7 @@
             </div>
             </section>
         </main>
+
+<script src="js/script.js"></script>
     </body>
 </html>
