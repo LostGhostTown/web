@@ -130,3 +130,39 @@ var weixinimg = document.getElementById("weixin");
     v2.addEventListener("mouseleave",()=>{
         weixinimg.style.display = "none";
     });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const rightAngle = document.querySelector(".right-angle");
+    const overlay = document.querySelector(".tv-screen"); 
+    const content = document.querySelector("body");
+    const box=document.querySelector(".box");
+
+    box.addEventListener('mouseenter', function() {
+        box.classList.add("shrink");
+        setTimeout(function() {
+            rightAngle.classList.add("su");
+
+            setTimeout(function(){
+                rightAngle.classList.add("rotate90");
+
+                setTimeout(function() {
+                    rightAngle.classList.remove("su", "rotate90");
+                    rightAngle.classList.add("move-right");
+                }, 1000); // 旋转动画持续时间
+
+            }, 2000); // 放大动画持续时间
+
+        }, 2000); // 缩小动画持续时间
+    });
+
+    // 监听.right-angle的动画结束
+    rightAngle.addEventListener('animationend', function(e) {
+        // 检查是不是move-right动画结束
+        if (e.animationName === 'moveRight') {
+            overlay.style.display = "none";
+            content.style.overflow = "auto";
+        }
+    });
+});
+    
+    

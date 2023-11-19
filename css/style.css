@@ -1,3 +1,102 @@
+body{
+  overflow: hidden;
+}
+.tv-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* 背景色为黑色 */
+  z-index: 999; /* 确保在其他内容上面 */
+}
+
+.box, .right-angle {
+  position: absolute; /* 绝对定位 */
+  top: 50%; /* 定位到中心 */
+  left: 50%; /* 定位到中心 */
+  transform: translate(-50%, -50%); /* 居中偏移 */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  border-radius: 25px;
+  border: 10px solid #fff;
+  cursor: pointer;
+  transition: opacity 2s 1s, transform 2s 1s, width 2s, height 2s;
+}
+.box.shrink {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transform: scale(0);
+}
+.right-angle {
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%) scale(0) rotate(225deg); /* 设置初始状态为scale(0) */
+  animation: scaleUp 2s; /* 动画延迟2秒开始 */
+  animation: none;
+}
+@keyframes scaleUp {
+  from {
+      transform: translate(-50%, -50%) scale(0) rotate(225deg);
+  }
+  to {
+      transform: translate(-50%, -50%) scale(1) rotate(225deg);
+  }
+}
+.right-angle.su{
+  animation: scaleUp 2s forwards;
+}
+@keyframes moveRight {
+  from {
+    transform: translate(-50%, -50%) scale(1) rotate(315deg);
+  }
+  to {
+      transform: translate(100vw, -50%) scale(1) rotate(315deg); /* 向右移动 */
+  }
+}
+.right-angle.move-right {
+  animation: moveRight 2s; /* 使用 forwards 以保持动画结束时的状态 */
+}
+@keyframes rotate90 {
+  from {
+    transform: translate(-50%, -50%) scale(1) rotate(225deg);
+  }
+  to{
+    transform: translate(-50%, -50%) scale(1) rotate(315deg);
+  }
+}
+.right-angle.rotate90{
+  animation: rotate90 1s forwards;
+}
+
+.horizontal-line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 9.6px;
+  background-color: white;
+}
+
+.vertical-line {
+  position: absolute;
+  right: 0;
+  width: 9.6px;
+  height: 100%;
+  background-color: white;
+}
+
+
+
+
+
 a{
   text-decoration: none;
 }
@@ -356,6 +455,10 @@ header h1 {
         color: #fff;
         padding-top: 100px;
   padding-bottom: 60px;
+    }
+    #smallone{
+      width: 100px;
+      height:auto;
     }
     .contact ul{
       list-style-type: none;
