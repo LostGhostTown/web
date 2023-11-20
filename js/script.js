@@ -200,16 +200,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(function() {
                     rightAngle.classList.remove("su", "rotate90");
                     rightAngle.classList.add("move-right");
-                }, 1000); // 旋转动画持续时间
+                }, 1000); 
 
-            }, 2000); // 放大动画持续时间
+            }, 2000); 
 
-        }, 2000); // 缩小动画持续时间
+        }, 2000); 
     });
 
-    // 监听.right-angle的动画结束
+    
     rightAngle.addEventListener('animationend', function(e) {
-        // 检查是不是move-right动画结束
+        
         if (e.animationName === 'moveRight') {
             overlay.style.display = "none";
             content.style.overflow = "auto";
@@ -217,6 +217,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.querySelectorAll('.projectIntroduction h1').forEach(function(elem) {
+    elem.addEventListener('mouseenter', function() {
+        this.style.color = 'skyblue'; 
+    });
+
+    elem.addEventListener('mouseleave', function() {
+        this.style.color = 'black';
+    });
+});
 
 
 
