@@ -1,3 +1,13 @@
+$(document).ready(function(){
+    $('.slider').slick({
+        autoplay: true,       // 开启自动播放
+        autoplaySpeed: 3000,  // 设置自动播放的速度（例如，每 3 秒切换一次）
+        arrows: false,        // 关闭导航箭头
+        dots: false           // 关闭分页点
+    });    
+});
+
+
 var smallimg1 = document.querySelector('#cp .small-image');
     var largeimg1 = document.querySelector('#cp .large-image');
     var smallimg2 = document.querySelector('#androidp .small-image');
@@ -7,23 +17,65 @@ var smallimg1 = document.querySelector('#cp .small-image');
     smallimg1.addEventListener('mouseenter', ()=>{
         largeimg1.style.display='block';
         largeimg1.style.top='0';
+        if (!$('.slider', largeimg1).hasClass('slick-initialized')) {
+            $('.slider', largeimg1).slick({
+                // 你的 Slick 配置
+            });
+        } else {
+            $('.slider', largeimg1).slick('setPosition');
+        }
     });
     smallimg1.addEventListener('mouseleave', ()=>{
         largeimg1.style.display='none';
+        if (!$('.slider', largeimg1).hasClass('slick-initialized')) {
+            $('.slider', largeimg1).slick({
+                // 你的 Slick 配置
+            });
+        } else {
+            $('.slider', largeimg1).slick('setPosition');
+        }
     });
     smallimg2.addEventListener('mouseenter', ()=>{
         largeimg2.style.display='block';
         largeimg2.style.top='0';
+        if (!$('.slider', largeimg2).hasClass('slick-initialized')) {
+            $('.slider', largeimg2).slick({
+                // 你的 Slick 配置
+            });
+        } else {
+            $('.slider', largeimg2).slick('setPosition');
+        }
     });
     smallimg2.addEventListener('mouseleave', ()=>{
         largeimg2.style.display='none';
+        if (!$('.slider', largeimg2).hasClass('slick-initialized')) {
+            $('.slider', largeimg2).slick({
+                // 你的 Slick 配置
+            });
+        } else {
+            $('.slider', largeimg2).slick('setPosition');
+        }
     });
     smallimg3.addEventListener('mouseenter', ()=>{
         largeimg3.style.display='block';
         largeimg3.style.top='0';
+        if (!$('.slider', largeimg3).hasClass('slick-initialized')) {
+            $('.slider', largeimg3).slick({
+                // 你的 Slick 配置
+            });
+        } else {
+            $('.slider', largeimg3).slick('setPosition');
+        }
     });
     smallimg3.addEventListener('mouseleave', ()=>{
         largeimg3.style.display='none';
+        if (!$('.slider', largeimg3).hasClass('slick-initialized')) {
+            $('.slider', largeimg3).slick({
+                // 你的 Slick 配置
+            });
+        } else {
+            $('.slider', largeimg3).slick('setPosition');
+        }
     });
 
 let modalOpen = false;
@@ -164,5 +216,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+
+
+  
     
     
