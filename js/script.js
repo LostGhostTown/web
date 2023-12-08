@@ -213,7 +213,9 @@ document.addEventListener("DOMContentLoaded", function() {
         
         if (e.animationName === 'moveRight') {
             overlay.style.display = "none";
-            content.style.display = "flex";
+            content.style.display="flex"
+            content.style.visibility = 'visible';
+            content.style.opacity = '1';
             nav.style.display="flex";
         }
     });
@@ -253,19 +255,30 @@ const sectionMap = {
   
       // 隐藏所有内容部分
       for (const section of Object.values(sectionMap)) {
-        section.style.display = "none";
+        section.style.opacity = '0';
+        setTimeout(() => {
+            section.style.visibility = 'hidden';
+            section.style.display="none";
+          }, 500);
+
       }
   
       // 显示目标内容部分
       const targetSection = sectionMap[targetId];
       if (targetSection) {
-        targetSection.style.display = "flex";
+        
+        setTimeout(() => {
+            targetSection.style.display = "flex"
+            targetSection.style.visibility='visible';
+           
+        }, 500);
+        setTimeout(() => {
+            targetSection.style.opacity = '1';
+        }, 1000);
       }
     });
   });
 
 
-
-  
     
     
