@@ -1,6 +1,7 @@
-body{
-  overflow: hidden;
+nav, .aboutMe, .selfIntroduction, .projectIntroduction, .share, .contact{
+  display:none;
 }
+
 .tv-screen {
   width: 100%;
   height: 100%;
@@ -257,15 +258,24 @@ header h1 {
   .aboutMe,
     .selfIntroduction,
     .projectIntroduction,
+    .contact {
+      width: 100vw; 
+      height: calc(100vh - 42.112px);
+    }
+  .aboutMe,
+    .selfIntroduction,
+    .projectIntroduction,
     .share,
     .contact {
       flex: 1; 
       margin: 0; 
       padding: 0;
+      margin-top: 42.112px;
+      
+      
 
-  padding-top: 160px;
-  padding-bottom: 120px;
-      display: flex; 
+
+      
       justify-content: center;
       align-items: center; 
       
@@ -298,9 +308,7 @@ header h1 {
         background-size: 100% 100%;
         background-position: center;
   background-repeat: no-repeat;
-  margin-top: 42.112px;
-  padding-top: 160px;
-  padding-bottom: 120px;
+  
 
     }
     .aboutMe div{
@@ -352,7 +360,7 @@ header h1 {
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
-        display: flex;
+        
     flex-direction: column;
     color: #fff;
     }
@@ -413,7 +421,7 @@ header h1 {
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
-        display: flex;
+        
         flex-direction: column;
         
     }
@@ -448,7 +456,8 @@ header h1 {
         background-position: center;
         background-repeat: no-repeat;
         
-          display: flex;
+          
+        
           flex-direction: column; 
           align-items: flex-start;
                     justify-content: center; 
@@ -461,8 +470,6 @@ header h1 {
         background-position: center;
         background-repeat: no-repeat;
         color: #fff;
-        padding-top: 100px;
-  padding-bottom: 60px;
     }
     #smallone{
       width: 100px;

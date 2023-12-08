@@ -186,7 +186,8 @@ var weixinimg = document.getElementById("weixin");
 document.addEventListener("DOMContentLoaded", function() {
     const rightAngle = document.querySelector(".right-angle");
     const overlay = document.querySelector(".tv-screen"); 
-    const content = document.querySelector("body");
+    const nav = document.querySelector("nav");
+    const content = document.querySelector(".aboutMe");
     const box=document.querySelector(".box");
 
     box.addEventListener('mouseenter', function() {
@@ -212,7 +213,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         if (e.animationName === 'moveRight') {
             overlay.style.display = "none";
-            content.style.overflow = "auto";
+            content.style.display = "flex";
+            nav.style.display="flex";
         }
     });
 });
@@ -226,6 +228,41 @@ document.querySelectorAll('.projectIntroduction h1').forEach(function(elem) {
         this.style.color = 'black';
     });
 });
+
+const menuLinks = document.querySelectorAll("#menu a");
+const aboutMeSection = document.querySelector(".aboutMe");
+const selfIntroductionSection = document.querySelector(".selfIntroduction");
+const projectIntroductionSection = document.querySelector(".projectIntroduction");
+const shareSection = document.querySelector(".share");
+const contactSection = document.querySelector(".contact");
+const sectionMap = {
+    "#1": aboutMeSection,
+    "#2": selfIntroductionSection,
+    "#3": projectIntroductionSection,
+    "#4": shareSection,
+    "#5": contactSection,
+  };
+  
+  // 为每个链接添加点击事件监听器
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault(); // 阻止默认的跳转行为
+  
+      // 获取目标锚点的 ID
+      const targetId = link.getAttribute("href");
+  
+      // 隐藏所有内容部分
+      for (const section of Object.values(sectionMap)) {
+        section.style.display = "none";
+      }
+  
+      // 显示目标内容部分
+      const targetSection = sectionMap[targetId];
+      if (targetSection) {
+        targetSection.style.display = "flex";
+      }
+    });
+  });
 
 
 
