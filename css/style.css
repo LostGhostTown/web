@@ -348,13 +348,18 @@ header h1 {
       text-align: right;
     }
     .selfIntroduction{
-        background-image: url('../img/450.jpeg');
+        background-image: url('../img/background3.jpg');
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
     flex-direction: column;
     color: #fff;
+    }
+    #plik{
+      background-color: black;
+      display: inline-block;
+      width: fit-content;
     }
     #contentme{
       display: flex;
@@ -374,11 +379,14 @@ header h1 {
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(3, auto); 
     gap: 50px;
+    grid-column-gap: 20px;
 }
 #c, #java, #python, #mysql, #html {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
+  border-radius: 10px; 
+  max-width: 200px;
 }
 #c{
   background-color: blue;

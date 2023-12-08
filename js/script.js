@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $('.slider').slick({
-        autoplay: true,       // 开启自动播放
-        autoplaySpeed: 3000,  // 设置自动播放的速度（例如，每 3 秒切换一次）
-        arrows: false,        // 关闭导航箭头
-        dots: false           // 关闭分页点
+        autoplay: true,       
+        autoplaySpeed: 3000,  
+        arrows: false,        
+        dots: false           
     });    
 });
 
@@ -19,7 +19,7 @@ var smallimg1 = document.querySelector('#cp .small-image');
         largeimg1.style.top='0';
         if (!$('.slider', largeimg1).hasClass('slick-initialized')) {
             $('.slider', largeimg1).slick({
-                // 你的 Slick 配置
+                
             });
         } else {
             $('.slider', largeimg1).slick('setPosition');
@@ -29,7 +29,7 @@ var smallimg1 = document.querySelector('#cp .small-image');
         largeimg1.style.display='none';
         if (!$('.slider', largeimg1).hasClass('slick-initialized')) {
             $('.slider', largeimg1).slick({
-                // 你的 Slick 配置
+                
             });
         } else {
             $('.slider', largeimg1).slick('setPosition');
@@ -40,7 +40,7 @@ var smallimg1 = document.querySelector('#cp .small-image');
         largeimg2.style.top='0';
         if (!$('.slider', largeimg2).hasClass('slick-initialized')) {
             $('.slider', largeimg2).slick({
-                // 你的 Slick 配置
+                
             });
         } else {
             $('.slider', largeimg2).slick('setPosition');
@@ -50,7 +50,7 @@ var smallimg1 = document.querySelector('#cp .small-image');
         largeimg2.style.display='none';
         if (!$('.slider', largeimg2).hasClass('slick-initialized')) {
             $('.slider', largeimg2).slick({
-                // 你的 Slick 配置
+               
             });
         } else {
             $('.slider', largeimg2).slick('setPosition');
@@ -61,7 +61,7 @@ var smallimg1 = document.querySelector('#cp .small-image');
         largeimg3.style.top='0';
         if (!$('.slider', largeimg3).hasClass('slick-initialized')) {
             $('.slider', largeimg3).slick({
-                // 你的 Slick 配置
+               
             });
         } else {
             $('.slider', largeimg3).slick('setPosition');
@@ -71,7 +71,7 @@ var smallimg1 = document.querySelector('#cp .small-image');
         largeimg3.style.display='none';
         if (!$('.slider', largeimg3).hasClass('slick-initialized')) {
             $('.slider', largeimg3).slick({
-                // 你的 Slick 配置
+               
             });
         } else {
             $('.slider', largeimg3).slick('setPosition');
