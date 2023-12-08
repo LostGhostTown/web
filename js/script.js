@@ -273,7 +273,7 @@ const sectionMap = {
            
         }, 500);
         setTimeout(() => {
-            targetSection.style.opacity = '1';
+             targetSection.style.opacity = '1';
         }, 1000);
       }
     });
